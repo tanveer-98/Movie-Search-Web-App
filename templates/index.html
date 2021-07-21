@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fetch Movie Details</title>
+  </head>
+  <link rel="stylesheet" href="{%static 'mystyle.css'%}">
+  <body>
+    <div class="container">
+      <h1>FETCH MOVIE DETAILS</h1>
+
+      <form method='POST' >
+         {%csrf_token%}
+         <label for="Movie_Name">Enter Movie Name</label>
+         <br></br>
+         <input type="text" name="Movie_Name"/>
+         <input type = "submit" class = "btn btn-info" value="VIEW"/>
+
+      </form>
+    </div>
+  </body>
+</html>
